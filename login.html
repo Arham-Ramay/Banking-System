@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body style="background-color: black;">
+    <section>
+        <div class="login-box">
+            <form action="#">
+                <h2>Login</h2>
+                <div class="input-box">
+                    <span class="icon"><i class="bi bi-envelope-fill"></i></span>
+                    <input type="email" id="email" name="email" required>
+                    <label>Email</label>
+                </div>
+    
+                <div class="input-box">
+                    <span class="icon"><i class="bi bi-lock-fill"></i></span>
+                    <input type="password"  id="password"
+                    name="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">Remember 
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <p id="total" value="total"></p>
+                <button type="button" onclick="logInInfo()" id="save-btn">Login</button>
+                <div class="register-link">
+                    <p>Dont have an account?<a href="signup.html"> Register Now</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+  <script src="pro.js"></script>
+
+</html>
